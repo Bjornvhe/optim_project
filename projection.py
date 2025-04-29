@@ -16,8 +16,8 @@ def project_onto_feasible_set(beta, y, C, tol=1e-10, max_iter=100):
         return np.dot(y, alpha)
 
     # Initialize lambda bounds starting with large bounds
-    lambda_min = -1e5
-    lambda_max = 1e5
+    lambda_min = -1.0
+    lambda_max = 1.0
 
     # Find initial bracket
     alpha_min = project_given_lambda(lambda_min)
